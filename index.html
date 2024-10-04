@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>todo-list</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Eyüp Can Taşdelen">
+<meta name="description" content="todo-list">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div id="name">Todo List</div>
+    </header>
+    <main>
+        <button id="add-button">Add New Task</button>
+
+        <form id ="form" class="form-class hidden">
+            <div id="form-close-button">
+                <button id="close-button"class="btn" type="button"><i class="fa fa-close"></i> Close</button>
+            </div>
+
+            <div id="form-body">
+                <div class="form-element">
+                    <label class="form-label" for="title">Title</label>
+                    <input class="form-input"id="title" required="required">
+                </div>
+                <div class="form-element">
+                    <label class="form label" for="date">Date</label>
+                    <input class="form-input"id="date"type="date" required="required">  
+                </div>
+                <div class="form-element">
+                    <label class="form label" for="description">Description</label>
+                    <textarea class="form-input" id="description" required="required" cols="30" rows="5"></textarea>
+                </div>
+            </div>
+            <div>
+                <button id="submit" type="submit">Add Task</button> 
+            </div>
+            
+        </form>
+       
+        <dialog id="dialog">
+            <form method="dialog">
+                <p >Discard unsaved changes?</p>
+                <div>
+                    <button id="cancel" >
+                        Cancel
+                      </button>
+                      <button id="discard">
+                        Discard
+                      </button>
+                </div>
+                  
+            </form>
+        </dialog>
+        <div id="tasks-container"></div>
+    </main>
+<footer>
+    <div>
+<button id="more-button" class="hidden">More...</button>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

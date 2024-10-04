@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(22, 22, 52);
+    
+  }
+#name{
+ color: white;
+ font-size: 4vw;
+ text-align: center;
+ margin-bottom: 3vw;
+}
+main{
+  background-color: white;
+  width: 50vw;
+  height: 75vh;
+  margin: auto;
+  border-radius: 2vw;
+  border:0.5vw solid orange;
+  overflow-y:auto;
+  overflow-x: hidden;
+}
+main::-webkit-scrollbar {
+  width: 2vw;
+ }
+
+main::-webkit-scrollbar-thumb{
+  background-color: orange;
+  border-radius: 0 1vw 1vw 0;
+}
+#add-button
+{
+    display: block;
+    background-color: orange;
+    margin: auto;
+    margin-top: 1vh;
+    width: 30vw;
+    font-size: 2vw;
+    border-radius: 2vw;
+}
+.form-class
+{
+    background-color: white;
+    border-radius: 2vw;
+    position: absolute;
+    top: 8vw;
+    width:49.2vw;
+    height:73.5vh;
+}
+form
+{
+display: flex;
+flex-direction: column;
+justify-content:space-between;
+overflow: hidden;
+z-index: 1;
+}
+#form-close-button
+{
+  display: flex;
+  justify-content: flex-end;
+  
+}
+#close-button{
+  border-radius: 0 1.9vw 0 0;
+}
+#form-body{
+  display: flex;
+  flex-direction: column;
+}
+.form-label,.form-input{
+  display: block;
+}
+
+.form-input{
+  width: 90%;
+  margin:auto;
+}
+.form-element{
+  font-size: 4vw;
+  margin: 1vh;
+}
+#title,#date{
+  height: 5vh;
+}
+#submit{
+    display: block;
+    background-color: orange;
+    margin: auto;
+    margin-bottom: 2vh;
+    width: 30vw;
+    font-size: 3vw;
+    border-radius: 2vw;
+}
+.btn {
+    background-color: red; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: darkred;
+  }
+  .hidden{
+    display: none;
+  }
+  #tasks-container{
+    width: 49vw;
+    margin-top: 2vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .task{
+    width: 20vw;
+    margin: 1.4vw 2vw;
+    font-size: 1vw;
+  }
+  .btntask{
+    background-color: orange;
+    font-size: 1.5vw;
+    color:black;
+  }
+#dialog{
+  font-size: 2rem;
+  color:black;
+  background-color: orange;
+  margin: 1vh auto;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+#dialog div{
+  display: flex;
+  justify-content: space-around;
+}
+#dialog button{
+  font-size: 5vh;
+  margin-bottom: 1vh;
+  padding: 5px;
+  border-radius: 5px;
+}
+footer{
+  display: flex;
+  justify-content: center;
+  margin: 1vh 0;
+}
+.crossdown{
+  position: relative;
+  top: 50%;
+  background-color: black;
+  height: 4px;
+  transform: rotate(20deg);
+}
+.crossup{
+  position: relative;
+  top: 50%;
+  background-color: black;
+  height: 4px;
+  transform: rotate(-20deg);  
+}
+.invisible{
+  opacity: 0;
+}
+
+
+#more-button{
+ background-color: orange;
+ padding: 0.5vh;
+ animation: blinker 2s linear infinite; 
+}
+ @keyframes blinker {  
+50% { opacity: 0; }
+ }
